@@ -5,6 +5,11 @@ A simple manager service which monitors a set of pv's, upon a value change it pe
 2. updating channelfinder
 3. email configured user
 
+Upon startup
+The inventory manager service will query channelfinder for all channels with property *serialNumber*.
+It creates monitors on the above channels, on pv value change events the inventory manager will update the value of 
+*serialNumber* property in channelfinder and create a log entry in Olog.
+
 
 ## Building ##
 
