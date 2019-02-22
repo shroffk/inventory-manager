@@ -2,8 +2,10 @@ package org.epics.inventory;
 
 import static org.epics.gpclient.GPClient.cacheLastValue;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.SynchronousQueue;
 import java.util.logging.Level;
@@ -14,10 +16,13 @@ import org.epics.gpclient.PVEvent;
 import org.epics.gpclient.PVReader;
 import org.epics.gpclient.PVReaderListener;
 import org.epics.vtype.VString;
+import org.epics.vtype.VType;
 import org.phoebus.channelfinder.Channel;
 import org.phoebus.channelfinder.ChannelFinderClient;
 import org.phoebus.channelfinder.ChannelFinderService;
 import org.phoebus.channelfinder.Property.Builder;
+import org.phoebus.pv.PV;
+import org.phoebus.pv.PVPool;
 import org.phoebus.util.shell.CommandShell;
 
 import edu.msu.nscl.olog.api.LogBuilder;
@@ -132,18 +137,71 @@ public class InventoryManagerService {
         return channels;
     }
 
+    private static final List<PV> pvs = new ArrayList<PV>();
     /**
      * Create connections to all the channels provided, and on
      * 
      * @param channels
      */
     static void startConnections(Collection<Channel> channels) {
-        channels.forEach(ch -> {
-            logger.info("Creating a monitor for : " + ch.getName());
-            PVReader<VString> pv = GPClient
-                    .read(GPClient.channel(datasource+ch.getName(), cacheLastValue(VString.class)))
-                    .addReadListener(new ValueProcessor(ch.getName(), client, logbook)).start();
-            monitoredChannels.put(ch.getName(), pv);
+        channels.forEach(channel -> {
+            logger.info("Creating a monitor for : " + channel.getName());
+//            PVReader<VString> pv = GPClient
+//                    .read(GPClient.channel(datasource+ch.getName(), cacheLastValue(VString.class)))
+//                    .addReadListener(new ValueProcessor(ch.getName(), client, logbook)).start();
+//            monitoredChannels.put(ch.getName(), pv);
+            
+            try {
+                String name = channel.getName();
+                PV pv_2 = PVPool.getPV(name);
+                pv_2.onValueEvent().subscribe((VType value) -> {
+                    if (value != null) {
+                        logger.info("pv event for " + channel.getName() + ": " + value);
+                        // update channelfinder
+                        Collection<Channel> oldChannels = client.findByName(name);
+                        String val = value.toString();
+                        logger.info("extracted value: " + val);
+                        client.update(Builder.property(serialProperty, val), name);
+                        Collection<Channel> updatedChannels = client.findByName(name);
+
+                        // update the logbook
+                        StringBuffer sb = new StringBuffer();
+                        sb.append("Serial number updated for channels \n");
+                        sb.append("Old Channels: \n");
+                        oldChannels.stream().forEach(ch -> {
+                            sb.append(ch.toString() + "\n");
+                            sb.append("Property:\n");
+                            ch.getProperties().forEach(property -> {
+                                sb.append(property.getName() + ":" + property.getValue() + "\n");
+                            });
+                            sb.append("Tag:\n");
+                            ch.getTags().forEach(tag -> {
+                                sb.append(tag.getName());
+                            });
+                        });
+                        sb.append("Updated Channels: \n");
+                        updatedChannels.stream().forEach(ch -> {
+                            sb.append(ch.toString() + "\n");
+                            sb.append("Property:\n");
+                            ch.getProperties().forEach(property -> {
+                                sb.append(property.getName() + ":" + property.getValue() + "\n");
+                            });
+                            sb.append("Tag:\n");
+                            ch.getTags().forEach(tag -> {
+                                sb.append(tag.getName());
+                            });
+                        });
+
+                        LogBuilder entry = LogBuilder.log().description(sb.toString()).level("Info")
+                                .appendToLogbook(LogbookBuilder.logbook("Operations"));
+                        logger.info(entry.toString());
+                        logbook.set(entry);
+                    }
+                });
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         });
     }
 
@@ -175,9 +233,12 @@ public class InventoryManagerService {
         public void pvChanged(PVEvent event, PVReader<VString> p) {
             logger.info("pv event for " + name + ": " + event + " " + p.isConnected() + " " + p.getValue());
             if (p.getValue() != null) {
+
+                logger.info("pv event for " + name + ": " + event + " " + p.isConnected() + " " + p.getValue().getValue());
                 // update channelfinder
                 Collection<Channel> oldChannels = client.findByName(name);
                 String val = p.getValue().getValue();
+                logger.info("extracted value: " + val);
                 client.update(Builder.property(serialProperty, val), name);
                 Collection<Channel> updatedChannels = client.findByName(name);
 
