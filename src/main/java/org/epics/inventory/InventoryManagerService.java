@@ -125,7 +125,9 @@ public class InventoryManagerService {
         // of pv's which are to be monitored.
         Map<String, String> searchMap = new HashMap<String, String>();
         searchMap.put(serialProperty, "*");
-        return client.find(searchMap);
+        Collection<Channel> channels = client.find(searchMap);
+        logger.info("Found " + channels.size() + " serial channels.");
+        return channels;
     }
 
     /**
@@ -135,8 +137,9 @@ public class InventoryManagerService {
      */
     static void startConnections(Collection<Channel> channels) {
         channels.forEach(ch -> {
+            logger.info("Creating a monitor for : " + ch.getName());
             PVReader<VString> pv = GPClient
-                    .read(GPClient.channel("loc://" + ch.getName(), cacheLastValue(VString.class)))
+                    .read(GPClient.channel(ch.getName(), cacheLastValue(VString.class)))
                     .addReadListener(new ValueProcessor(ch.getName(), client, logbook)).start();
             monitoredChannels.put(ch.getName(), pv);
         });

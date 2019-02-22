@@ -1,0 +1,450 @@
+record(stringin, "irm:001:IDN") {
+field(VAL,"IRM_S/N:001")
+}
+record(stringin, "irm:002:IDN") {
+field(VAL,"IRM_S/N:002")
+}
+record(stringin, "irm:003:IDN") {
+field(VAL,"IRM_S/N:003")
+}
+record(stringin, "irm:004:IDN") {
+field(VAL,"IRM_S/N:004")
+}
+record(stringin, "irm:005:IDN") {
+field(VAL,"IRM_S/N:005")
+}
+record(stringin, "irm:006:IDN") {
+field(VAL,"IRM_S/N:006")
+}
+record(stringin, "irm:007:IDN") {
+field(VAL,"IRM_S/N:007")
+}
+record(stringin, "irm:008:IDN") {
+field(VAL,"IRM_S/N:008")
+}
+record(stringin, "irm:009:IDN") {
+field(VAL,"IRM_S/N:009")
+}
+record(stringin, "irm:010:IDN") {
+field(VAL,"IRM_S/N:010")
+}
+record(stringin, "irm:011:IDN") {
+field(VAL,"IRM_S/N:011")
+}
+record(stringin, "irm:012:IDN") {
+field(VAL,"IRM_S/N:012")
+}
+record(stringin, "irm:013:IDN") {
+field(VAL,"IRM_S/N:013")
+}
+record(stringin, "irm:014:IDN") {
+field(VAL,"IRM_S/N:014")
+}
+record(stringin, "irm:015:IDN") {
+field(VAL,"IRM_S/N:015")
+}
+record(stringin, "irm:016:IDN") {
+field(VAL,"IRM_S/N:016")
+}
+record(stringin, "irm:017:IDN") {
+field(VAL,"IRM_S/N:017")
+}
+record(stringin, "irm:018:IDN") {
+field(VAL,"IRM_S/N:018")
+}
+record(stringin, "irm:019:IDN") {
+field(VAL,"IRM_S/N:019")
+}
+record(stringin, "irm:020:IDN") {
+field(VAL,"IRM_S/N:020")
+}
+record(stringin, "irm:021:IDN") {
+field(VAL,"IRM_S/N:021")
+}
+record(stringin, "irm:022:IDN") {
+field(VAL,"IRM_S/N:022")
+}
+record(stringin, "irm:023:IDN") {
+field(VAL,"IRM_S/N:023")
+}
+record(stringin, "irm:024:IDN") {
+field(VAL,"IRM_S/N:024")
+}
+record(stringin, "irm:025:IDN") {
+field(VAL,"IRM_S/N:025")
+}
+record(stringin, "irm:026:IDN") {
+field(VAL,"IRM_S/N:026")
+}
+record(stringin, "irm:027:IDN") {
+field(VAL,"IRM_S/N:027")
+}
+record(stringin, "irm:028:IDN") {
+field(VAL,"IRM_S/N:028")
+}
+record(stringin, "irm:029:IDN") {
+field(VAL,"IRM_S/N:029")
+}
+record(stringin, "irm:030:IDN") {
+field(VAL,"IRM_S/N:030")
+}
+record(stringin, "irm:031:IDN") {
+field(VAL,"IRM_S/N:031")
+}
+record(stringin, "irm:032:IDN") {
+field(VAL,"IRM_S/N:032")
+}
+record(stringin, "irm:033:IDN") {
+field(VAL,"IRM_S/N:033")
+}
+record(stringin, "irm:034:IDN") {
+field(VAL,"IRM_S/N:034")
+}
+record(stringin, "irm:035:IDN") {
+field(VAL,"IRM_S/N:035")
+}
+record(stringin, "irm:036:IDN") {
+field(VAL,"IRM_S/N:036")
+}
+record(stringin, "irm:037:IDN") {
+field(VAL,"IRM_S/N:037")
+}
+record(stringin, "irm:038:IDN") {
+field(VAL,"IRM_S/N:038")
+}
+record(stringin, "irm:039:IDN") {
+field(VAL,"IRM_S/N:039")
+}
+record(stringin, "irm:040:IDN") {
+field(VAL,"IRM_S/N:040")
+}
+record(stringin, "irm:041:IDN") {
+field(VAL,"IRM_S/N:041")
+}
+record(stringin, "irm:042:IDN") {
+field(VAL,"IRM_S/N:042")
+}
+record(stringin, "irm:043:IDN") {
+field(VAL,"IRM_S/N:043")
+}
+record(stringin, "irm:044:IDN") {
+field(VAL,"IRM_S/N:044")
+}
+record(stringin, "irm:045:IDN") {
+field(VAL,"IRM_S/N:045")
+}
+record(stringin, "irm:046:IDN") {
+field(VAL,"IRM_S/N:046")
+}
+record(stringin, "irm:047:IDN") {
+field(VAL,"IRM_S/N:047")
+}
+record(stringin, "irm:048:IDN") {
+field(VAL,"IRM_S/N:048")
+}
+record(stringin, "irm:049:IDN") {
+field(VAL,"IRM_S/N:049")
+}
+record(stringin, "irm:050:IDN") {
+field(VAL,"IRM_S/N:050")
+}
+record(stringin, "irm:051:IDN") {
+field(VAL,"IRM_S/N:051")
+}
+record(stringin, "irm:052:IDN") {
+field(VAL,"IRM_S/N:052")
+}
+record(stringin, "irm:053:IDN") {
+field(VAL,"IRM_S/N:053")
+}
+record(stringin, "irm:054:IDN") {
+field(VAL,"IRM_S/N:054")
+}
+record(stringin, "irm:055:IDN") {
+field(VAL,"IRM_S/N:055")
+}
+record(stringin, "irm:056:IDN") {
+field(VAL,"IRM_S/N:056")
+}
+record(stringin, "irm:057:IDN") {
+field(VAL,"IRM_S/N:057")
+}
+record(stringin, "irm:058:IDN") {
+field(VAL,"IRM_S/N:058")
+}
+record(stringin, "irm:059:IDN") {
+field(VAL,"IRM_S/N:059")
+}
+record(stringin, "irm:060:IDN") {
+field(VAL,"IRM_S/N:060")
+}
+record(stringin, "irm:061:IDN") {
+field(VAL,"IRM_S/N:061")
+}
+record(stringin, "irm:062:IDN") {
+field(VAL,"IRM_S/N:062")
+}
+record(stringin, "irm:063:IDN") {
+field(VAL,"IRM_S/N:063")
+}
+record(stringin, "irm:064:IDN") {
+field(VAL,"IRM_S/N:064")
+}
+record(stringin, "irm:065:IDN") {
+field(VAL,"IRM_S/N:065")
+}
+record(stringin, "irm:066:IDN") {
+field(VAL,"IRM_S/N:066")
+}
+record(stringin, "irm:067:IDN") {
+field(VAL,"IRM_S/N:067")
+}
+record(stringin, "irm:068:IDN") {
+field(VAL,"IRM_S/N:068")
+}
+record(stringin, "irm:069:IDN") {
+field(VAL,"IRM_S/N:069")
+}
+record(stringin, "irm:070:IDN") {
+field(VAL,"IRM_S/N:070")
+}
+record(stringin, "irm:071:IDN") {
+field(VAL,"IRM_S/N:071")
+}
+record(stringin, "irm:072:IDN") {
+field(VAL,"IRM_S/N:072")
+}
+record(stringin, "irm:073:IDN") {
+field(VAL,"IRM_S/N:073")
+}
+record(stringin, "irm:074:IDN") {
+field(VAL,"IRM_S/N:074")
+}
+record(stringin, "irm:075:IDN") {
+field(VAL,"IRM_S/N:075")
+}
+record(stringin, "irm:076:IDN") {
+field(VAL,"IRM_S/N:076")
+}
+record(stringin, "irm:077:IDN") {
+field(VAL,"IRM_S/N:077")
+}
+record(stringin, "irm:078:IDN") {
+field(VAL,"IRM_S/N:078")
+}
+record(stringin, "irm:079:IDN") {
+field(VAL,"IRM_S/N:079")
+}
+record(stringin, "irm:080:IDN") {
+field(VAL,"IRM_S/N:080")
+}
+record(stringin, "irm:081:IDN") {
+field(VAL,"IRM_S/N:081")
+}
+record(stringin, "irm:082:IDN") {
+field(VAL,"IRM_S/N:082")
+}
+record(stringin, "irm:083:IDN") {
+field(VAL,"IRM_S/N:083")
+}
+record(stringin, "irm:084:IDN") {
+field(VAL,"IRM_S/N:084")
+}
+record(stringin, "irm:085:IDN") {
+field(VAL,"IRM_S/N:085")
+}
+record(stringin, "irm:086:IDN") {
+field(VAL,"IRM_S/N:086")
+}
+record(stringin, "irm:087:IDN") {
+field(VAL,"IRM_S/N:087")
+}
+record(stringin, "irm:088:IDN") {
+field(VAL,"IRM_S/N:088")
+}
+record(stringin, "irm:089:IDN") {
+field(VAL,"IRM_S/N:089")
+}
+record(stringin, "irm:090:IDN") {
+field(VAL,"IRM_S/N:090")
+}
+record(stringin, "irm:091:IDN") {
+field(VAL,"IRM_S/N:091")
+}
+record(stringin, "irm:092:IDN") {
+field(VAL,"IRM_S/N:092")
+}
+record(stringin, "irm:093:IDN") {
+field(VAL,"IRM_S/N:093")
+}
+record(stringin, "irm:094:IDN") {
+field(VAL,"IRM_S/N:094")
+}
+record(stringin, "irm:095:IDN") {
+field(VAL,"IRM_S/N:095")
+}
+record(stringin, "irm:096:IDN") {
+field(VAL,"IRM_S/N:096")
+}
+record(stringin, "irm:097:IDN") {
+field(VAL,"IRM_S/N:097")
+}
+record(stringin, "irm:098:IDN") {
+field(VAL,"IRM_S/N:098")
+}
+record(stringin, "irm:099:IDN") {
+field(VAL,"IRM_S/N:099")
+}
+record(stringin, "irm:100:IDN") {
+field(VAL,"IRM_S/N:100")
+}
+record(stringin, "irm:101:IDN") {
+field(VAL,"IRM_S/N:101")
+}
+record(stringin, "irm:102:IDN") {
+field(VAL,"IRM_S/N:102")
+}
+record(stringin, "irm:103:IDN") {
+field(VAL,"IRM_S/N:103")
+}
+record(stringin, "irm:104:IDN") {
+field(VAL,"IRM_S/N:104")
+}
+record(stringin, "irm:105:IDN") {
+field(VAL,"IRM_S/N:105")
+}
+record(stringin, "irm:106:IDN") {
+field(VAL,"IRM_S/N:106")
+}
+record(stringin, "irm:107:IDN") {
+field(VAL,"IRM_S/N:107")
+}
+record(stringin, "irm:108:IDN") {
+field(VAL,"IRM_S/N:108")
+}
+record(stringin, "irm:109:IDN") {
+field(VAL,"IRM_S/N:109")
+}
+record(stringin, "irm:110:IDN") {
+field(VAL,"IRM_S/N:110")
+}
+record(stringin, "irm:111:IDN") {
+field(VAL,"IRM_S/N:111")
+}
+record(stringin, "irm:112:IDN") {
+field(VAL,"IRM_S/N:112")
+}
+record(stringin, "irm:113:IDN") {
+field(VAL,"IRM_S/N:113")
+}
+record(stringin, "irm:114:IDN") {
+field(VAL,"IRM_S/N:114")
+}
+record(stringin, "irm:115:IDN") {
+field(VAL,"IRM_S/N:115")
+}
+record(stringin, "irm:116:IDN") {
+field(VAL,"IRM_S/N:116")
+}
+record(stringin, "irm:117:IDN") {
+field(VAL,"IRM_S/N:117")
+}
+record(stringin, "irm:118:IDN") {
+field(VAL,"IRM_S/N:118")
+}
+record(stringin, "irm:119:IDN") {
+field(VAL,"IRM_S/N:119")
+}
+record(stringin, "irm:120:IDN") {
+field(VAL,"IRM_S/N:120")
+}
+record(stringin, "irm:121:IDN") {
+field(VAL,"IRM_S/N:121")
+}
+record(stringin, "irm:122:IDN") {
+field(VAL,"IRM_S/N:122")
+}
+record(stringin, "irm:123:IDN") {
+field(VAL,"IRM_S/N:123")
+}
+record(stringin, "irm:124:IDN") {
+field(VAL,"IRM_S/N:124")
+}
+record(stringin, "irm:125:IDN") {
+field(VAL,"IRM_S/N:125")
+}
+record(stringin, "irm:126:IDN") {
+field(VAL,"IRM_S/N:126")
+}
+record(stringin, "irm:127:IDN") {
+field(VAL,"IRM_S/N:127")
+}
+record(stringin, "irm:128:IDN") {
+field(VAL,"IRM_S/N:128")
+}
+record(stringin, "irm:129:IDN") {
+field(VAL,"IRM_S/N:129")
+}
+record(stringin, "irm:130:IDN") {
+field(VAL,"IRM_S/N:130")
+}
+record(stringin, "irm:131:IDN") {
+field(VAL,"IRM_S/N:131")
+}
+record(stringin, "irm:132:IDN") {
+field(VAL,"IRM_S/N:132")
+}
+record(stringin, "irm:133:IDN") {
+field(VAL,"IRM_S/N:133")
+}
+record(stringin, "irm:134:IDN") {
+field(VAL,"IRM_S/N:134")
+}
+record(stringin, "irm:135:IDN") {
+field(VAL,"IRM_S/N:135")
+}
+record(stringin, "irm:136:IDN") {
+field(VAL,"IRM_S/N:136")
+}
+record(stringin, "irm:137:IDN") {
+field(VAL,"IRM_S/N:137")
+}
+record(stringin, "irm:138:IDN") {
+field(VAL,"IRM_S/N:138")
+}
+record(stringin, "irm:139:IDN") {
+field(VAL,"IRM_S/N:139")
+}
+record(stringin, "irm:140:IDN") {
+field(VAL,"IRM_S/N:140")
+}
+record(stringin, "irm:141:IDN") {
+field(VAL,"IRM_S/N:141")
+}
+record(stringin, "irm:142:IDN") {
+field(VAL,"IRM_S/N:142")
+}
+record(stringin, "irm:143:IDN") {
+field(VAL,"IRM_S/N:143")
+}
+record(stringin, "irm:144:IDN") {
+field(VAL,"IRM_S/N:144")
+}
+record(stringin, "irm:145:IDN") {
+field(VAL,"IRM_S/N:145")
+}
+record(stringin, "irm:146:IDN") {
+field(VAL,"IRM_S/N:146")
+}
+record(stringin, "irm:147:IDN") {
+field(VAL,"IRM_S/N:147")
+}
+record(stringin, "irm:148:IDN") {
+field(VAL,"IRM_S/N:148")
+}
+record(stringin, "irm:149:IDN") {
+field(VAL,"IRM_S/N:149")
+}
+record(stringin, "irm:150:IDN") {
+field(VAL,"IRM_S/N:150")
+}
