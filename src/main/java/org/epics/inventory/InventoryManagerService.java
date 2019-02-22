@@ -46,8 +46,8 @@ public class InventoryManagerService {
     private volatile CommandShell shell;
     private final SynchronousQueue<Boolean> restart = new SynchronousQueue<>();
 
-    public static final String deviceProperty = "Device";
-    public static final String serialProperty = "SerialNumber";
+    public static final String deviceProperty = "device";
+    public static final String serialProperty = "serialNumber";
 
     private static OlogClient logbook;
     static ChannelFinderClient client;
