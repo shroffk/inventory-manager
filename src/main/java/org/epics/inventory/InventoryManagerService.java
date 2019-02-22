@@ -46,6 +46,8 @@ public class InventoryManagerService {
     private volatile CommandShell shell;
     private final SynchronousQueue<Boolean> restart = new SynchronousQueue<>();
 
+
+    public static String datasource = "ca://";
     public static final String deviceProperty = "device";
     public static final String serialProperty = "serialNumber";
 
@@ -139,7 +141,7 @@ public class InventoryManagerService {
         channels.forEach(ch -> {
             logger.info("Creating a monitor for : " + ch.getName());
             PVReader<VString> pv = GPClient
-                    .read(GPClient.channel(ch.getName(), cacheLastValue(VString.class)))
+                    .read(GPClient.channel(datasource+ch.getName(), cacheLastValue(VString.class)))
                     .addReadListener(new ValueProcessor(ch.getName(), client, logbook)).start();
             monitoredChannels.put(ch.getName(), pv);
         });
